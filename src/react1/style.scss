@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@900&display=swap");
+body {
+  margin: 0 auto;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: black;
+  span {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    &:hover {
+      color: lightcyan;
+      cursor: pointer;
+    }
+  }
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  .advice {
+    font-family: "Vesper Libre", serif;
+    background-color: #00a9d8;
+    width: 700px;
+    height: 500px;
+    margin-top: 15px;
+    box-shadow: -5px -5px teal;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    p {
+      align-self: center;
+      font-size: 30px;
+      color: linen;
+      flex-wrap: wrap;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+}

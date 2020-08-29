@@ -1,4 +1,5 @@
 import * as singleSpa from "single-spa";
+// import * as style from "./index.scss";
 
 singleSpa.registerApplication(
   "App1",
