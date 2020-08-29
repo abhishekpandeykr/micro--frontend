@@ -5,6 +5,7 @@ const Header = () => (
   <div>
     <header>
       <NavLink />
+      <p className="header">Today's Advice</p>
     </header>
   </div>
 );

@@ -7,11 +7,19 @@ header {
   background-color: #f1f1f1;
   padding: 20px;
   text-align: center;
+  .header {
+    position: absolute;
+    right: 50px;
+    top: -7px;
+    font-size: 30px;
+    color: rgb(6, 24, 24);
+  }
 }
 
 .nav {
   overflow: hidden;
-  background-color: black;
+  background-color: rgb(19, 18, 18);
+  width: 80%;
   span {
     float: left;
     display: block;
