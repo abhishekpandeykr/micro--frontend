@@ -9,6 +9,7 @@ singleSpa.registerApplication(
     location.pathname === "/" ||
     location.pathname.startsWith("/app1")
 );
+
 singleSpa.registerApplication(
   "App2",
   () => import("../react2/app2.js"),
