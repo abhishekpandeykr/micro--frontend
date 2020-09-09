@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = () => ({
   entry: {
@@ -36,6 +37,14 @@ module.exports = () => ({
           },
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+          },
+        ],
+      },
     ],
   },
   node: {
@@ -48,6 +57,13 @@ module.exports = () => ({
     splitChunks: {
       name: "common-dependencies.js",
     },
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        test: /\.(js|ts)(\?.*)?$/i,
+        include: /\.(js|ts|htm|html|scss|css)(\?.*)?$/i,
+      }),
+    ],
   },
   plugins: [new CleanWebpackPlugin()],
   devtool: "source-map",

@@ -30,6 +30,5 @@ function domElementGetter() {
     el.id = "app1";
     document.body.appendChild(el);
   }
-
   return el;
 }
